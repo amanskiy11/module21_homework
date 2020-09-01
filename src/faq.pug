@@ -1,0 +1,85 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8', name='viewport', content='width=device-width, initial-scale=1.0')
+    title Частые вопросы
+    link(rel='stylesheet', type='text/css', href='../dist/main.css')
+  body
+    header
+      a.skillDrive(href='https://skillfactory.ru/') SkillDrive
+      .navbar-menu
+        nav.navbar
+          ul.navbar-end
+            li.navbar-item
+              a(href='aboutus.html') О нас
+            li.navbar-item
+              a(href='') Условия
+            li.navbar-item
+              a(href='faq.html') Частые Вопросы
+        button.loginButton Войти
+      .burger
+        input#check-menu(type='checkbox')
+        label.menuLabel(for='check-menu')
+        .burger-line.first
+        .burger-line.second
+        .burger-line.third
+        .burger-line.fourth
+        nav.main-menu
+          a.burgerLink(href='aboutus.html') О нас
+          a.burgerLink(href='') Условия
+          a.burgerLink(href='faq.html') Частые Вопросы
+          a.burgerLink(href='') Войти
+    main
+      img.image(src='../images/undraw_questions_75e0%201.svg', alt='Картинка')
+      h1 Частые вопросы
+      p.textL Отвечаем на вопросы, которые у вас могут возникнуть.
+      .faqWrapper
+        button.collapse
+          | Могу ли я отменить бронь?
+          img.pointerDown(src='../images/pointerDown.svg', alt='Стрелка вниз')
+          img.pointerUp(src='../images/pointerUp.svg', alt='Стрелка вверх')
+        .content
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        button.collapse
+          | Могу ли я вернуть деньги, если не подошёл автомобиль?
+          img.pointerDown(src='../images/pointerDown.svg', alt='Стрелка вниз')
+          img.pointerUp(src='../images/pointerUp.svg', alt='Стрелка вверх')
+        .content
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        button.collapse
+          | Что делать, если случилось ДТП?
+          img.pointerDown(src='../images/pointerDown.svg', alt='Стрелка вниз')
+          img.pointerUp(src='../images/pointerUp.svg', alt='Стрелка вверх')
+        .content
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        button.collapse
+          | Могу ли я оставить автомобиль в удобном для меня месте?
+          img.pointerDown(src='../images/pointerDown.svg', alt='Стрелка вниз')
+          img.pointerUp(src='../images/pointerUp.svg', alt='Стрелка вверх')
+        .content
+          | Данный вопрос обсуждается с собственником, но как правило автомобиль нужно вернуть туда, где вы его получили.
+        button.collapse
+          | Что делать, если собственник просит заплатить ему напрямую?
+          img.pointerDown(src='../images/pointerDown.svg', alt='Стрелка вниз')
+          img.pointerUp(src='../images/pointerUp.svg', alt='Стрелка вверх')
+        .content
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        button.collapse
+          | Должен ли я заправлять автомобиль?
+          img.pointerDown(src='../images/pointerDown.svg', alt='Стрелка вниз')
+          img.pointerUp(src='../images/pointerUp.svg', alt='Стрелка вверх')
+        .content
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      footer
+        .copyright © SkillDrive Inc. 2020
+        .socialLinks
+          ul
+            li.footerSocial
+              a(href='')
+                img.socialLogo(src='../images/vkontakte.svg', alt='ссылка VKontakte')
+            li.footerSocial
+              a(href='')
+                img.socialLogo(src='../images/instagram.svg', alt='ссылка Instagram')
+            li.footerSocial
+              a(href='')
+                img.socialLogo(src='../images/facebook.svg', alt='ссылка Facebook')

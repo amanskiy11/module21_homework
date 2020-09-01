@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+
+@import "variables";
+
+@mixin mobile {
+  @media screen and (max-width: 375px) {
+    @content
+  }
+}
+
+@mixin base-font ($font-style, $font-weight) {
+  font-family: $base-font;
+  font-style: $font-style;
+  font-weight: $font-weight;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  }
+
+@include mobile {
+  header{
+    height: 68px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $base-black;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+  width: auto;
+}
+
+@include mobile {
+  .image {
+    width: 267px;
+    height: 202px;
+    margin-top: 20px;
+  }
+}
+
+.skillDrive {
+  width: 115px;
+  height: 28px;
+  margin-left: 40px;
+  margin-top: 31px;
+  display: flex;
+  align-items: center;
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: $base-black;
+   &:hover{
+     background: #fdff33;
+   }
+}
+
+@include mobile {
+  .skillDrive{
+    margin: 0;
+  }
+}
+
+.navbar-menu {
+  margin-top: 35px;
+}
+
+@include mobile {
+  .navbar-menu {
+    display: none;
+  }
+}
+.loginButton {
+  box-shadow: 0 0 0 2px #c6c9d1;
+  @include base-font(normal, 500);
+  font-size: 16px;
+  line-height: 19px;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 9px;
+  padding: 12px 30px;
+  color: $base-black;
+  flex: none;
+  order: 0;
+  align-self: center;
+  margin-left: 25px;
+  margin-right: 25px;
+  cursor: pointer;
+  &:hover {
+     background: #fdff33;
+   }
+}
+
+.navbar {
+  display: inline-block;
+}
+
+
+.navbar-item {
+  display: inline;
+  list-style-type: none;
+  margin-left: 25px;
+  @include base-font(normal, normal);
+  font-size: 16px;
+  line-height: 19px;
+  color: $base-black;
+  &:hover {
+    background: #fdff33;
+  }
+}
+
+h1 {
+  @include base-font(normal, bold);
+  font-size: 64px;
+  line-height: 120%;
+  text-align: center;
+  color: $base-black;
+}
+
+@include mobile {
+  h1{
+    font-weight: 500;
+    font-size: 32px;
+  }
+}
+
+.firstSectionText {
+  position: center;
+  width: 925px;
+  height: 105px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include base-font(normal, normal);
+  font-size: 24px;
+  line-height: 147.3%;
+  text-align: center;
+  color: #1B1B1B;
+}
+
+@include mobile {
+  .firstSectionText {
+    width: 335px;
+    height: 144px;
+    font-size: 16px;
+  }
+}
+
+.secondSection {
+  background: #F7F9FB;
+  text-align: center;
+}
+
+@include mobile {
+  .secondSection {
+    height: 237px;
+  }
+}
+
+h2 {
+  @include base-font(normal, 500);
+  font-size: 48px;
+  line-height: 120%;
+  padding-top: 80px;
+  text-align: center;
+  color: $base-black;
+}
+
+@include mobile {
+  h2 {
+    font-size: 24px;
+    padding-top: 40px;
+  }
+}
+
+.emailDiv {
+  display: inline-block;
+  width: 264px;
+  height: 56px;
+  text-align: center;
+  border-right: thin solid #cccccc;
+  margin-bottom: 104px;
+  &:last-child {
+    border-right: 0;
+  }
+}
+
+@include mobile {
+  .emailDiv {
+    margin-bottom: 15px;
+    border-right: none;
+  }
+}
+
+.key {
+  @include base-font(normal, normal);
+  font-size: 14px;
+  line-height: 147.3%;
+  text-align: center;
+  color: #4F4F4F;
+}
+
+@include mobile {
+  .key {
+    font-size: 12px;
+  }
+}
+
+.value {
+  display: block;
+  @include base-font(normal, normal);
+  font-size: 20px;
+  line-height: 147.3%;
+  text-align: center;
+  color: #000000;
+}
+
+@include mobile {
+  .value {
+    font-size: 14px;
+  }
+}
+
+.person {
+  display: inline-block;
+  margin-left: 81px;
+}
+
+@include mobile {
+  .person {
+    margin-left: 50px;
+  }
+}
+
+.name {
+  @include base-font(normal, 500);
+  font-size: 20px;
+  line-height: 147.3%;
+  color: #000000;
+  text-align: center;
+  margin-top: 23px;
+}
+
+@include mobile {
+  .name {
+    font-size: 16px;
+    margin-top: 12px;
+    line-height: 75%;
+    text-align: left;
+  }
+}
+
+.position {
+  @include base-font(normal, normal);
+  font-size: 14px;
+  line-height: 147.3%;
+  text-align: center;
+  color: #828282;
+}
+
+@include mobile {
+  .position {
+    font-size: 12px;
+    line-height: 75%;
+    text-align: left;
+  }
+}
+
+.firstRow {
+  display: flex;
+  justify-content: center;
+}
+
+.secondRow {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 120px;
+}
+
+.first {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  height: 124px;
+  background: #3F3D56;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerSocial {
+  list-style-type: none;
+  display: inline;
+  margin-left: 25px;
+}
+
+@include mobile {
+  footer {
+    flex-wrap: wrap;
+  }
+}
+
+.copyright {
+  @include base-font(normal, normal);
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: 40px;
+  color: #FFFFFF;
+  opacity: 0.4;
+}
+
+@include mobile {
+  .copyright {
+    margin-top: 30px;
+    margin-left: 35px;
+  }
+}
+
+.socialLinks {
+  margin-right: 40px;
+}
+
+@include mobile {
+  .socialLinks {
+    margin-left: 20px;
+  }
+}
+
+.socialLogo {
+  margin-left: -10px;
+  &:hover {
+    transform: scale(2);
+  }
+}
+
+ul {
+  padding: 0;
+}
+
+@include mobile {
+  .photo {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.burger{
+  display: none;
+  margin: 100px auto;
+  width: 320px;
+  position: relative;
+  color: white;
+  text-align: center;
+  height: 40px;
+  font-family: $base-font;
+}
+
+@include mobile {
+  .burger{
+    display: block;
+  }
+}
+
+.menuLabel{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+  line-height: 40px;
+}
+
+.burger-line{
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 35px;
+  height: 2px;
+  background-color: black;
+  transition: .5s all;
+}
+
+.second, .third{
+  top: 18px;
+}
+
+.fourth{
+  top: 28px;
+}
+
+.main-menu{
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  max-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  transition: .5s all;
+}
+
+.burgerLink {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  border-top: 1px solid rgba(255,255,255,.3);
+  background-color: #cccccc;
+  &:hover {
+    background-color: #c6c9d1;
+  }
+}
+
+#check-menu{
+  display: none;
+  &:checked ~ .main-menu {
+    max-height: 500px;
+    font-size: 16px;
+  }
+  &:checked ~ .first {
+    display: none;
+  }
+  &:checked ~ .second {
+    transform: rotate(45deg);
+  }
+  &:checked ~ .third {
+    transform: rotate(-45deg);
+  }
+  &:checked ~ .fourth {
+    display: none;
+  }
+}
+
+.textL {
+  @include base-font(normal, normal);
+  font-size: 24px;
+  line-height: 147.3%;
+  color: $base-black;
+  text-align: center;
+}
+
+@include mobile {
+  .textL {
+    font-size: 16px;
+  }
+}
+
+.collapse {
+  display: flex;
+  width: 1026px;
+  height: 66px;
+  background: #F7F7F8;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  @include base-font(normal, normal);
+  font-size: 20px;
+  padding-left: 22px;
+  color: $base-black;
+  outline: 0;
+  outline-offset: 0;
+
+  &:hover {
+    background: rgba(97, 161, 153, 0.1);
+  }
+  &.active {
+    background: rgba(97, 161, 153, 0.15);
+    color: #61A199;
+    outline: 0;
+    outline-offset: 0;
+  }
+}
+
+@include mobile {
+  .collapse {
+    width: 335px;
+    height: 50px;
+    font-size: 14px;
+  }
+}
+
+.faqWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faqQuestion {
+  vertical-align: center;
+  @include base-font(normal, normal);
+  font-size: 20px;
+  margin-left: 22px;
+  color: $base-black;
+}
+
+.pointerDown {
+  margin-right: 28px;
+  display: block;
+  &.active {
+    display: none;
+  }
+}
+
+@include mobile {
+  .pointerDown {
+    margin-right: 10px;
+  }
+}
+
+.pointerUp {
+  display: none;
+  margin-right: 28px;
+  &.active {
+     display: block;
+   }
+}
+
+@include mobile {
+  .pointerUp {
+    margin-right: 10px;
+  }
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  display: flex;
+  width: 950px;
+  border-radius: 6px;
+  align-items: center;
+  margin-bottom: 14px;
+  @include base-font(normal, normal);
+  font-size: 20px;
+  padding-left: 50px;
+  color: $base-black;
+}
+
+@include mobile {
+  .content {
+    width: 250px;
+    font-size: 14px;
+  }
+}
